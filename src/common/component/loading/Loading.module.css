@@ -1,0 +1,54 @@
+.loadingArea {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 82px;
+  height: 85px;
+  transform: translate(-50%, -50%);
+}
+
+.loadingOff,
+.loadingOn {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* 매우 높은 z-index 값 */
+  background-size: 100%;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+}
+
+.loadingOff {
+  background-image: url('../../../assets/images/common/loading_off.svg');
+}
+
+.loadingOn {
+  background-image: url('../../../assets/images/common/loading_on.svg');
+  animation: loading 3s infinite;
+  mask-image: linear-gradient(to top, black 100%, transparent 0);
+  mask-size: 100% 100%;
+  mask-position: bottom;
+  mask-repeat: no-repeat;
+}
+
+@keyframes loading {
+  0% {
+    mask-size: 100% 0%;
+  }
+
+  100% {
+    mask-size: 100% 100%;
+  }
+}

@@ -1,0 +1,127 @@
+.info-wrap {
+    padding: 0 8px 12px;
+    border-bottom: 1px solid var(--border-color);
+}
+.info-wrap:last-child {
+    padding-bottom: 0;
+    padding-top: 10px;
+    border-bottom: 0 none;
+}
+.info-wrap [class*="tag"] {
+    margin-right: -8px;
+}
+.title-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 3px;
+}
+.title-wrap .title {
+    padding-right:10px;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Pretendard Bold';
+    line-height: 150%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+[class*="detail"] .title-wrap {
+    align-items: flex-start;
+}
+[class*="detail"] .title-wrap .title {
+    color: #fff;
+    white-space: unset;
+    text-overflow: unset;
+    word-break: break-all;
+}
+
+.sub-text-wrap {
+    color: var(--text-color-darkgray);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 150%;
+}
+.sub-text-wrap .line {
+    display: inline-block;
+    margin: 0 8px;
+    width: 1px;
+    height: 9px;
+    background-color: var(--bg-gray);
+}
+
+.info-wrap .amount {
+    font-size: 12px;
+    font-weight: 700;
+    font-family: 'Pretendard Bold';
+    line-height: 150%;
+}
+.info-wrap .date-wrap,
+.amount-list .amount-area {
+    flex-shrink: 0;
+    color: var(--text-color-bk);
+    font-size: 12px;
+    font-weight: 700;
+    font-family: 'Pretendard Bold';
+    line-height: 150%;
+}
+.info-wrap .date-wrap .text,
+.amount-list .amount-area .text {
+    display: inline-block;
+    padding-right: 8px;
+    font-weight: 400;
+    font-family: 'Pretendard';
+    color: var(--text-color-darkgray);
+}
+.amount-list {
+    text-align: right;
+}
+.amount-list .amount-area {
+    line-height: 22px;
+    padding-bottom: 4px;
+}
+.amount-list .amount-area:last-child {
+    padding-bottom: 0;
+}
+
+[class*="detail"] .info-wrap {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.20);
+}
+[class*="detail"] .info-wrap:last-child {
+    border-bottom: 0;
+}
+[class*="detail"] .sub-text-wrap {
+    color: #fff;
+    opacity: 0.5;
+}
+[class*="detail"] .sub-text-wrap .line {
+    background-color: #fff;
+    opacity: 0.5;
+}
+[class*="detail"] .amount {
+    color: #fff;
+}
+[class*="detail"] .info-wrap .date-wrap,
+[class*="detail"] .amount-list .amount-area {
+    padding-top: 3px;
+    color: #fff;
+}
+[class*="detail"] .date-wrap .text,
+[class*="detail"] .amount-list .amount-area .text {
+    color: #fff;
+    opacity: 0.5;
+}
+
+.name-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 2px;
+    font-size: 12px;
+    font-weight: 700;
+    font-family: 'Pretendard Bold';
+    line-height: 150%;
+}
+[class*="detail"] .name-wrap {
+    color: #fff;
+}

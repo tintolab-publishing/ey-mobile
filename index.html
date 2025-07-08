@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <title>KP Mobile UAT</title>
+  <!-- 배포용 -->
+  <!--script src="/html-guard.min.js" defer></script-->
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/index.jsx"></script>
+  <!-- 배포용 -->
+  <!-- <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // PROTECTION: Disable DevTools
+      HtmlGuard.protections.antiDevTools();
+      // PROTECTION: Disable context menu
+      HtmlGuard.protections.blockContextMenu();
+      // PROTECTION: Disable drag
+      HtmlGuard.protections.blockDrag();
+      // PROTECTION: Disable selection
+      HtmlGuard.protections.blockSelection();
+      // PROTECTION: Disable console output
+      HtmlGuard.protections.blockConsoleOutput();
+    });
+  </script> -->
+</body>
+
+</html>

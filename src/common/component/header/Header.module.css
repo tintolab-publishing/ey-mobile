@@ -1,0 +1,33 @@
+/* header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    padding: 24px 24px 16px;
+    background-color: var(--bg-bk);
+}
+
+.title-wrap {
+    display: flex;
+    align-items: flex-end;
+    gap: 0 4px;
+}
+
+.title-wrap .title {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Pretendard Bold';
+    line-height: 150%;
+    margin-bottom: -2px;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.logo-area {
+    padding-bottom: 3px;
+}

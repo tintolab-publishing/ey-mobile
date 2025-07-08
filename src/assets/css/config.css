@@ -1,0 +1,78 @@
+:root {
+    --primary-color: #FEE433;
+    --primary-color-hover: #0652C2;
+    --secondary-color: rgba(36, 112, 224, 0.10);
+    --secondary-color-hover: rgba(36, 112, 224, 0.16);
+    --sub-color: #E3E5E7;
+    --sub-color-hover: #D5D7D9;
+    --dark-color: #202632;
+    --dark-color-hover: #020814;
+    --white-color: #ffffff;
+    --white-color-hover: #f5f5f5;
+    --disabled-color: #E5E5E5;
+
+    --border-color: #E3E3E8;
+    --border-color-hover: #999999;
+
+    --border-color-gray: #C4C4CD;
+    --border-color-darkgray: #777;
+    --input-border-color: #d9d9d9;
+    --tag-border-color: rgba(79, 89, 104, 0.7);
+
+
+    --text-color-bk: #2E2E38;
+    --text-color-lightgray: #C4C4CD;
+    --text-color-gray: #4F5968;
+    --text-color-darkgray: #747480;
+    --text-color-blue: #007aff;
+    --text-color-red: #FF0000;
+
+    --bg-color: #F4F5F6;
+    --tab-bg-color: #E7E8ED;
+    --bg-bk: #2E2E38;
+    --bg-navy: #223A6F;
+    --bg-gray: #C4C4CD;
+    --bg-lightgray: #ECEEF3;
+    --bg-darkgray: #777;
+    --bg-disabled: #E5E5E5;
+
+    --bg-search: #888D9A;
+
+    --placeholder-color: #a0a0a0;
+    --focus-color: #747480;
+
+    --red: #C81818;
+    --dot: rgba(255, 0, 0, 0.70);
+    --yellow: #FBBC05;
+    --required-mark: #FF0000;
+    --navy: #141766;
+
+    --btn-bg-color: #E6E6EC;
+    --btn-bg-color-bk: #2E2E38;
+    --btn-bg-color-bk-hover: #020814;
+    --btn-bg-color-hover: #D2D2D8;
+    --btn-bg-color-wh-hover: #F5F5F5;
+    --btn-border-color-hover: #999;
+    --btn-shadow: 0px 8px 40px 0px rgba(180, 194, 216, 0.4);
+
+    --box-border-radius: 20px;
+    --box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.04);
+
+    --scrollbar-width: 16px;
+    --scrollbar-bg-color: transparent;
+    --scrollbar-thumb-width: 6px;
+    --scrollbar-thumb-border: 6px;
+    --scrollbar-thumb-border-color: transparent;
+    --scrollbar-thumb-radius: 10px;
+    --scrollbar-thumb-color: rgba(255, 255, 255, 0.7);
+    --scrollbar-thumb-color-bk: rgba(0, 0, 0, 0.3);
+    --scrollbar-track-margin: 8px 0;
+    --scrollbar-track-bg-color: transparent;
+
+    --table-stroke: #E5E5E5;
+    --table-head-stroke: #999;
+
+    --masking: #4F5968;
+
+    --sprite-image-size: 1350px 1019px;
+}

@@ -1,0 +1,50 @@
+.box-title-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8px 12px;
+}
+
+.box-title-wrap:last-child,
+.box-title-wrap:only-child {
+    padding-bottom: 0;
+}
+
+.box-title-wrap .box-title {
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Pretendard Bold';
+    line-height: 150%;
+}
+
+.content-area {
+    padding: 10px 8px 0;
+    border-top: 1px solid var(--border-color);
+}
+
+.content-area [class*="tag"] {
+    margin-right: -2px;
+}
+
+[class*="file-attach"] .content-area {
+    padding: 0;
+    border-top: 0;
+}
+
+/* 조회 영역 dropdown */
+.search-box {
+    margin: 18px 18px 14px;
+    border-radius: 16px;
+    background-color: var(--bg-lightgray);
+}
+
+.search-box .box-title-wrap {
+    padding: 16px;
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.search-box .content-area {
+    border-top: none;
+    padding: 4px 12px 16px;
+}

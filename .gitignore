@@ -1,0 +1,8 @@
+node_modules
+package-lock.json
+build.bat
+env.bat
+env.ps1
+dist
+kp-mobile.code-workspace
+vite.config.js

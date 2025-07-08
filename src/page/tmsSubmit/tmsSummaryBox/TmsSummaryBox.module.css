@@ -1,0 +1,54 @@
+.summary-area {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0 12px 5px;
+    margin-bottom: 12px;
+}
+.summary-area::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: -12px;
+    width: calc(100% + 24px);
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+.total-time-wrap .text {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 140%; 
+}
+.time-area {
+    display: flex;
+    align-items: center;
+    gap: 0 8px;
+    padding-top: 4px;
+}
+.time-area .time {
+    display: flex;
+    align-items: center;
+}
+.time-area .approval-time {
+    padding-right: 2px;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Pretendard Bold';
+    line-height: 100%;
+}
+.time-area .total-time {
+    font-size: 16px;
+    font-weight: 500;
+    opacity: 0.4;
+    line-height: 100%;
+}
+.status-mark {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+.status-mark.red {
+    background-color: var(--red);
+}

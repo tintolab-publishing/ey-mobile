@@ -1,0 +1,27 @@
+.approval-list {
+    padding: 0 8px 16px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 150%;
+}
+.approval-list:first-child {
+    padding-top: 10px;
+    border-top: 1px solid var(--border-color);
+}
+.approval-list:last-child {
+    padding-bottom: 0;
+}
+.approval-list .role {
+    color: var(--text-color-darkgray);
+}
+.approval-list .name {
+    color: var(--text-color-bk);
+    font-weight: 700;
+    font-family: 'Pretendard Bold';
+}
+.approval-list .date {
+    color: var(--text-color-bk);
+}
+.approval-list .step {
+    color: var(--text-color-darkgray);
+}

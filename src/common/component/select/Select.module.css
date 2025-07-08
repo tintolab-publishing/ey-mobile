@@ -1,0 +1,25 @@
+select {
+    width: 100%;
+    min-width: 120px;
+    height: 40px;
+    padding: 0 34px 0 14px;
+    border: 1px solid var(--border-color-gray);
+    border-radius: 8px;
+    background-color: #fff;
+    color: var(--text-color-bk);
+    font-family: 'Pretendard', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 150%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url('../../../assets/images/common/icon/icon_dropdown.svg');
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+select:focus {
+    border: 2px solid var(--focus-color);
+}

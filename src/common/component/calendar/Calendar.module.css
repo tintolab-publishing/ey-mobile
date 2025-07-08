@@ -1,0 +1,111 @@
+.calendar-area {
+    width: calc(100vw - 36px);
+    padding: 0px 2px 58px;
+    background-color: #fff;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+[class*="search-box"] .calendar-area {
+    top: 47px;
+    width: 100%;
+}
+
+.calendar-area .calendar {
+    padding-top: 40px;
+}
+.month-area {
+    display: flex;
+    padding-bottom: 10px;
+}
+.month-area .year {
+    padding-top: 4px;
+    font-size: 17px;
+    line-height: 100%;
+    color: var(--text-color-darkgray);
+}
+.month-area .month {
+    font-size: 21px;
+    font-weight: 700;
+    font-family: 'Pretendard Bold';
+    margin-left: 6px;
+    line-height: 100%;
+}
+
+.date-area {
+    padding-top: 0px;
+}
+
+.week-day {
+    padding-top: 10px;
+    margin-bottom: 4px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 100%;
+    opacity: 0.6;
+}
+
+.date-area .week {
+    margin-bottom: 6px;
+    border-radius: 8px;
+}
+
+.date-area .week:last-child {
+    margin-bottom: 0;
+}
+
+.date-area .week [class*="text-blue"] {
+    color: rgba(0, 122, 255, 0.6);
+}
+.date-area .week [class*="text-red"] {
+    color: rgba(255, 0, 0, 0.6);
+}
+
+.date-area .week.selected {
+    background-color: var(--bg-lightgray);
+}
+
+.date-area .date {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 48px;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 100%;
+}
+
+.date-area .week.selected .date {
+    font-weight: 700;
+    font-family: 'Pretendard Bold';
+}
+
+.selected-date-range {
+    background-color: var(--bg-lightgray);
+}
+
+.selected-date {
+    border-radius: 8px;
+    background-color: var(--bg-bk);
+    color: #fff;
+}
+
+.period-area {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 68px;
+    left: 0;
+    width: 100%;
+    padding: 14px 24px 13px;
+    border-top: 1px solid var(--border-color);
+    background-color: #fff;
+    font-size: 14px;
+    line-height: 150%;
+}
+.period-area .period {
+    color: var(--text-color-darkgray);
+}

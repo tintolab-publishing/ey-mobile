@@ -1,0 +1,84 @@
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    src:
+        local('Pretendard Regular'),
+        url('../fonts/eot/Pretendard-Regular.eot')
+            format('embedded-opentype'),
+        url('../fonts/woff2/Pretendard-Regular.woff2')
+            format('font-woff2'),
+        url('../fonts/woff/Pretendard-Regular.woff')
+            format('font-woff'),
+        url('../fonts/ttf/Pretendard-Regular.ttf')
+            format('truetype');
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+    src:
+        local('Pretendard Medium'),
+        url('../fonts/eot/Pretendard-Medium.eot')
+            format('embedded-opentype'),
+        url('../fonts/woff2/Pretendard-Medium.woff2')
+            format('font-woff2'),
+        url('../fonts/woff/Pretendard-Medium.woff')
+            format('font-woff'),
+        url('../fonts/ttf/Pretendard-Medium.ttf')
+            format('truetype');
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+    src:
+        local('Pretendard Bold'),
+        url('../fonts/eot/Pretendard-Bold.eot')
+            format('embedded-opentype'),
+        url('../fonts/woff2/Pretendard-Bold.woff2')
+            format('font-woff2'),
+        url('../fonts/woff/Pretendard-Bold.woff')
+            format('font-woff'),
+        url('../fonts/ttf/Pretendard-Bold.ttf')
+            format('truetype');
+}
+
+@font-face {
+    font-family: 'Pretendard Bold';
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+    src:
+        local('Pretendard Bold'),
+        url('../fonts/eot/Pretendard-Bold.eot')
+            format('embedded-opentype'),
+        url('../fonts/woff2/Pretendard-Bold.woff2')
+            format('font-woff2'),
+        url('../fonts/woff/Pretendard-Bold.woff')
+            format('font-woff'),
+        url('../fonts/ttf/Pretendard-Bold.ttf')
+            format('truetype');
+}
+
+@font-face {
+    font-family: 'Chillax';
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+    src:
+        local('Chillax Semibold'),
+        url('../fonts/eot/Chillax-Semibold.eot')
+            format('embedded-opentype'),
+        url('../fonts/woff2/Chillax-Semibold.woff2')
+            format('font-woff2'),
+        url('../fonts/woff/Chillax-Semibold.woff')
+            format('font-woff'),
+        url('../fonts/ttf/Chillax-Semibold.ttf')
+            format('truetype');
+}

@@ -1,0 +1,24 @@
+.listArea {
+  padding: 20px;
+}
+.listArea h1 {
+  font-size: 18px;
+  font-weight: 700;
+  font-family: 'Pretendard Bold';
+}
+.listArea h2 {
+  font-size: 16px;
+  font-weight: 700;
+  font-family: 'Pretendard Bold';
+}
+.listArea li {
+  padding: 5px 20px;
+  cursor: default;
+}
+.listArea a {
+  color: var(--primary-color);
+  opacity: 0.6;
+}
+.listArea a:hover {
+  opacity: 1;
+}

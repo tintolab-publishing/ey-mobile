@@ -1,0 +1,115 @@
+.info-wrap {
+    padding: 0 8px 12px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.info-wrap:last-child {
+    padding-bottom: 0;
+    padding-top: 10px;
+    border-bottom: 0 none;
+}
+
+.info-wrap [class*="tag"] {
+    margin-right: -8px;
+}
+
+.title-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 3px;
+}
+
+.title-wrap .title {
+    padding-right: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Pretendard Bold';
+    line-height: 150%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.sub-text-wrap {
+    color: var(--text-color-darkgray);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.sub-text-wrap .line {
+    display: inline-block;
+    margin: 0 8px;
+    width: 1px;
+    height: 9px;
+    background-color: var(--bg-gray);
+}
+.info-wrap .amount,
+.info-wrap .name {
+    font-size: 12px;
+    font-weight: 700;
+    font-family: 'Pretendard Bold';
+    line-height: 150%;
+}
+
+.info-wrap .date-wrap {
+    flex-shrink: 0;
+    color: var(--text-color-bk);
+    font-size: 12px;
+    font-weight: 700;
+    font-family: 'Pretendard Bold';
+    line-height: 150%;
+}
+
+.info-wrap .date-wrap .text {
+    display: inline-block;
+    padding-right: 8px;
+    font-weight: 400;
+    font-family: 'Pretendard';
+    color: var(--text-color-darkgray);
+}
+
+[class*="detail"] .title-wrap {
+    align-items: flex-start;
+}
+[class*="detail"] .title-wrap .title {
+    color: #fff;
+    white-space: unset;
+    text-overflow: unset;
+    word-break: break-all;
+}
+[class*="detail"] .title-wrap [class*="tag"] {
+    margin-top: 2px;
+}
+
+[class*="detail"] .info-wrap {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.20);
+}
+
+[class*="detail"] .info-wrap:last-child {
+    border-bottom: 0;
+}
+
+[class*="detail"] .sub-text-wrap {
+    color: #fff;
+    opacity: 0.5;
+}
+
+[class*="detail"] .sub-text-wrap .line {
+    background-color: #fff;
+    opacity: 0.5;
+}
+
+[class*="detail"] .amount {
+    color: #fff;
+}
+
+[class*="detail"] .info-wrap .date-wrap {
+    color: #fff;
+}
+
+[class*="detail"] .date-wrap .text {
+    color: #fff;
+    opacity: 0.5;
+}

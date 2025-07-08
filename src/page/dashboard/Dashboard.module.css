@@ -1,0 +1,28 @@
+/* dashboard */
+.dashboard-wrap {
+    min-height: 100%;
+    background-color: var(--bg-bk);
+}
+.dashboard-wrap .inner {
+    padding: 0 18px 24px;
+}
+
+/* dashboard bottom */
+.box-wrap {
+    width: calc(100% - 14.9333vw);
+}
+.item-title {
+    width: 14.9333vw;
+    font-size: 15px;
+}
+
+/* dashboard top */
+.title-wrap {
+    padding: 4px 0 12px 8px;
+}
+.title-wrap .title {
+    font-size: 16px;
+}
+.status-list {
+    gap: 8px;
+}
