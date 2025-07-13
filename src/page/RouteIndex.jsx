@@ -12,6 +12,7 @@ import DetailPayment from './payment/DetailPayment';
 import LoginDev from './login/LoginForDev';
 import RoundRobin from './roundRobin/RoundRobin';
 import DetailRoundRobin from './roundRobin/DetailRoundRobin';
+import IndepResponse from './indepResponse/IndepResponse';
 
 const RouteIndex = {
     /* /list */
@@ -92,6 +93,13 @@ const RouteIndex = {
     tmsApproval: {
         name: "TimeSheet 승인",
         component: TmsApproval,
+        layout: MainLayout,
+    },
+
+    /* /indepResponse */
+    indepResponse: {
+        name: "독립성 확인 답변 작성",
+        component: IndepResponse,
         layout: MainLayout,
     },
 };

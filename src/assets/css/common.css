@@ -375,6 +375,9 @@ strong,
     width: 72px;
 }
 
+.btn.w60 {
+    width: 60px;
+}
 .btn.w100 {
     width: 100px;
 }
@@ -1255,6 +1258,11 @@ strong,
     top: 20px;
     left: 18px;
     width: calc(100% - 118px);
+}
+
+/* select */
+select.w-small {
+    min-width: 100px;
 }
 
 /* checkbox */

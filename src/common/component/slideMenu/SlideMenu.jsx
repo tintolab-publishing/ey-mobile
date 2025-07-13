@@ -54,6 +54,10 @@ const SlideMenu = ({ isOpen, onClose }) => {
                 onClose();
                 return;
             case 6:
+                navigate('/indepResponse');
+                onClose();
+                return;
+            case 7:
                 setSearch(true);
                 return;
             default:
@@ -215,6 +219,9 @@ const SlideMenu = ({ isOpen, onClose }) => {
                                     <div className="menu">AP 승인</div>
                                 </li>
                                 <li className="memu-item" onClick={() => onMenuClick(6)}>
+                                    <div className="menu">독립성 확인 답변 작성</div>
+                                </li>
+                                <li className="memu-item" onClick={() => onMenuClick(7)}>
                                     <Icon icon="menu07" />
                                     <div className="menu">People Search</div>
                                 </li>
