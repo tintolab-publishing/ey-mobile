@@ -23,7 +23,7 @@ const IndepResponse = () => {
         { value: '', text: '제출완료', }
     ]);
 
-    const data = [
+    const resListdata = [
         { index: 1, company: "메가스터디(주)", status: "pending", date:'2025-07-01', },
         { index: 2, company: "메가스터디교육(주)", status: "pending", date:'2025-07-01' },
         { index: 3, company: "메가커피", status: "editing", date:'2025-07-01' },
@@ -48,13 +48,10 @@ const IndepResponse = () => {
                         <div className="count">12건</div>
                     </div>
                     <div className="response-list flex flex-col">
-                        {data.map((item) => (
+                        {resListdata.map((data, index) => (
                             <ResponseBox
-                                key={item.index}
-                                index={item.index}
-                                company={item.company}
-                                status={item.status}
-                                date={item.date}
+                                key={index}
+                                dataSet={data}
                             />
                         ))}
                     </div>

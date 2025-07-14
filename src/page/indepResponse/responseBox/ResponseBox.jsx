@@ -2,7 +2,9 @@
 import Tag from "../../../common/component/tag/Tag";
 import styles from "./ResponseBox.module.css"
 
-const ResponseBox = ({ index, company, status, date }) => {
+const ResponseBox = ({ dataSet }) => {
+
+    const responsedata = dataSet || {};
 
     const statusMap = {
         pending: {
@@ -19,19 +21,19 @@ const ResponseBox = ({ index, company, status, date }) => {
         },
     };
 
-     const currentStatus = statusMap[status] || statusMap.pending;
+     const currentStatus = statusMap[responsedata.status] || statusMap.pending;
 
     return (
         <div className="response-item box line shadow">
             <div className="flex flex-col">
                 <div className={styles.companyWrap}>
-                    <p className={styles.count}>{index}</p>
-                    <p className={styles.companyName}>{company}</p>
+                    <p className={styles.count}>{responsedata.index}</p>
+                    <p className={styles.companyName}>{responsedata.company}</p>
                 </div>
                 <div className="flex justify-between">
                     <div className={styles.dateWrap}>
                         <p>회신기한</p>
-                        <p className={styles.date}>{date}</p>
+                        <p className={styles.date}>{responsedata.date}</p>
                     </div>
                     <Tag variant={currentStatus.variant} tagType="approve" text={currentStatus.text} />
                 </div>
