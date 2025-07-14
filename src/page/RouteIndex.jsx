@@ -13,6 +13,7 @@ import LoginDev from './login/LoginForDev';
 import RoundRobin from './roundRobin/RoundRobin';
 import DetailRoundRobin from './roundRobin/DetailRoundRobin';
 import IndepResponse from './indepResponse/IndepResponse';
+import DetailIndepResponse from './indepResponse/DetailIndepResponse';
 
 const RouteIndex = {
     /* /list */
@@ -101,6 +102,13 @@ const RouteIndex = {
         name: "독립성 확인 답변 작성",
         component: IndepResponse,
         layout: MainLayout,
+
+        /* /indepResponse/detail */
+        detail: {
+            name: "답변 작성",
+            component: DetailIndepResponse,
+            layout: DetailLayout
+        }
     },
 };
 

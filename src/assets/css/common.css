@@ -1991,6 +1991,7 @@ select.w-small {
     padding-bottom: 0;
 }
 
+.contents-title-area .title,
 .popup-title-wrap .popup-title {
     font-size: 20px;
     font-weight: 700;
@@ -1998,6 +1999,7 @@ select.w-small {
     line-height: 150%;
 }
 
+.contents-title-area .text,
 .popup-title-wrap .sub-text {
     padding-top: 10px;
     font-size: 14px;
@@ -2739,4 +2741,17 @@ select.w-small {
     background-color: #fff;
     color: var(--text-color-bk);
     font-weight: 700;
+}
+
+/* 독립성 확인 절차 */
+.company-list {
+    max-height: 242px;
+    margin-bottom: -11px;
+    padding: 16px 8px;
+    border-top: 1px solid var(--border-color);
+    overflow-y: auto;
+}
+.executive-table {
+    width: 100%;
+    text-align: center;
 }
