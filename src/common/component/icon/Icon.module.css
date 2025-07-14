@@ -113,6 +113,11 @@
     height: 19px;
     background-image: url('../../../assets/images/common/icon/icon_tooltip.svg');
 }
+.icon.tooltip-small {
+    width: 14px;
+    height: 14px;
+    background-image: url('../../../assets/images/common/icon/icon_tooltip_small.svg');
+}
 
 .icon.view-list {
     width: 20px;

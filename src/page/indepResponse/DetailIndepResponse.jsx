@@ -1,10 +1,14 @@
-import React from 'react'
+import { useState } from "react";
 import Dropdown from '../../common/component/dropdown/Dropdown'
 import Button from '../../common/component/button/Button'
 import Company from './detailItem/Company'
 import Executive from './detailItem/Executive'
+import Checkbox from '../../common/component/checkbox/Checkbox'
+import Icon from '../../common/component/icon/Icon'
+import QuestionList from "./questionList/QuestionList";
 
 const DetailIndepResponse = () => {
+
     const companyList = [
         { ko: '리뉴에너지경기(주)', en: 'renewenergy Gyeonggi Co.,Ltd.' },
         { ko: '일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십', en: 'abcdefghijklmnopqrstuvwxyz' },
@@ -33,7 +37,6 @@ const DetailIndepResponse = () => {
         { name: '박정호', ownershipType: '', position: '부회장' },
     ]
 
-
     return (
         <>
         <div className="contents-wrap">
@@ -58,20 +61,40 @@ const DetailIndepResponse = () => {
                 </Dropdown>
                 <Dropdown className="box line shadow" title="감사대상 회사의 주요 주주 및 임원 목록">
                     {executiveList && (
-                        <table className="executive-table">
-                            <tr>
-                                <th>성명</th>
-                                <th>관계</th>
-                                <th>직위</th>
-                            </tr>
-                            {executiveList.map((executive, index) => (
-                                <Executive key={index} dataSet={executive} />
-                            ))}
-                        </table>
+                        <div className="executive-table-wrap">
+                            <table className="executive-table">
+                                <thead>
+                                    <tr>
+                                        <th>성명</th>
+                                        <th>관계</th>
+                                        <th>직위</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {executiveList.map((executive, index) => (
+                                        <Executive key={index} dataSet={executive} />
+                                    ))}
+                                </tbody>
+                            </table>
+                        </div>
                     )}
                 </Dropdown>
                 <div className="box line shadow">
-                    예 아니오
+                    <div className="box-title-wrap flex flex-wrap justify-between">
+                        <span className="box-title">문항 내용</span>
+                        <Checkbox label="전체 아니오" className="check-small all-check" />
+                        <div className="guide-text">
+                            <Icon icon="tooltip-small" />
+                            터치 시 답변에 고려가 필요한 [예시]를 확인할 수 있습니다.
+                        </div>
+                    </div>
+                    <div className="caution-message-box">
+                        <div className="box-title">주의</div>
+                        <div className="text-area">
+                            <div className="text">신규 감사고객의 경유 독립성 준수 대상 기간은 감사계약 체결일부터 해당됨에 따라 특이사하잉 있는 경우 감사계약 체결일 이전에 모두 해소하여야 합니다.</div>
+                        </div>
+                    </div>
+                    <QuestionList />
                 </div>
             </div>
         </div>

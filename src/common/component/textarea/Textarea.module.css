@@ -14,7 +14,12 @@ textarea {
 }
 textarea::placeholder {
     color: rgba(46, 46, 56, 0.4);
+	word-break: keep-all;
 }
 textarea:focus {
     border: 2px solid var(--focus-color);
+}
+
+textarea.hSmall {
+	height: 87px;
 }

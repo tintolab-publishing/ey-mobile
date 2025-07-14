@@ -243,6 +243,9 @@ strong,
 .h56 {
     height: 56px;
 }
+.h87 {
+    height: 87px;
+}
 
 .textCenter {
     text-align: center;
@@ -769,6 +772,23 @@ strong,
     display: none;
 }
 
+.caution-message-box {
+    border-radius: 12px;
+    border: 1px solid #FEE502;
+    padding: 12px;
+    margin-bottom: 12px;
+    background-color: rgba(254, 229, 2, 0.1);
+}
+.caution-message-box .box-title {
+    padding-bottom: 4px;
+    font-size: 14px;
+}
+.caution-message-box .text {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 150%;
+}
+
 /* tag */
 .tag {
     display: block;
@@ -1284,6 +1304,9 @@ select.w-small {
 .checkbox-area.all-check {
     padding: 20px 12px 0;
 }
+.box-title-wrap .all-check {
+    padding: 0 8px 0 0;
+}
 
 .timesheet-item .checkbox-area {
     margin-top: 2px;
@@ -1325,6 +1348,10 @@ select.w-small {
     font-size: 13px;
     line-height: 150%;
 }
+.checkbox-area.check-small label>span {
+    gap: 0 6px;
+    font-size: 12px;
+}
 
 .checkbox-area label input+span::before {
     content: '';
@@ -1336,10 +1363,17 @@ select.w-small {
     border: 1px solid #E1E1E1;
     background-color: #FFF;
 }
+.checkbox-area.check-small label input+span::before {
+    width: 16px;
+    height: 16px;
+}
 
 .checkbox-area input:checked+span::before {
     border: none;
     background-image: url('../images/common/icon/icon_checked.svg');
+}
+.checkbox-area.check-small input:checked+span::before {
+    background-image: url('../images/common/icon/icon_checked_small.svg');
 }
 
 .agree-check-wrap {
@@ -1357,6 +1391,48 @@ select.w-small {
 .agree-area {
     margin-top: 20px;
 }
+
+/* radio */
+.radio-btn-wrap {
+    display: flex;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    overflow: hidden;
+}
+.radio-btn-wrap .radio-btn {
+    flex: 1;
+    height: 30px;
+    cursor: pointer;
+}
+.radio-btn input[type="radio"] {
+  display: none;
+}
+.radio-btn span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: var(--text-color-bk);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 150%;
+    background-color: #F6F6FA;
+}
+.radio-btn:first-child span {
+    border-right: 1px solid var(--border-color);
+    border-radius: 4px 0 0 4px;
+}
+.radio-btn:last-child span {
+    border-radius: 0 4px 4px 0;
+}
+/* 선택됐을 때 스타일 */
+.radio-btn input[type="radio"]:checked + span {
+  background: var(--bg-bk);
+  color: #fff;
+}
+
+.radio-wrap input[type="radio"]:checked .radio {}
 
 /* filebox */
 .filebox {
@@ -2279,6 +2355,9 @@ select.w-small {
 .tooltip-area.on [class*="icon"] {
     background-image: url('../../assets/images/common/icon/icon_tooltip_bk.svg');
 }
+.tooltip-area.on [class*="tooltip-small"] {
+    background-image: url('../../assets/images/common/icon/icon_tooltip_bk_small.svg');
+}
 
 /* 승인 리스트 */
 .time-info-wrap {
@@ -2751,7 +2830,46 @@ select.w-small {
     border-top: 1px solid var(--border-color);
     overflow-y: auto;
 }
+.executive-table-wrap {
+    max-height: 230px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    overflow: auto;
+}
 .executive-table {
     width: 100%;
     text-align: center;
+}
+.executive-table thead tr th,
+.executive-table tbody tr td {
+    height: 30px;
+    border-bottom: 1px solid var(--border-color);
+    color: var(--text-color-bk);
+    font-size: 10px;
+    line-height: 150%;
+    vertical-align: middle;
+}
+.executive-table thead tr th {
+    position: sticky;
+    top: 0;
+    background-color: var(--table-head-bg);
+    font-weight: 700;
+}
+.executive-table tbody tr td {
+    font-weight: 400;
+}
+.executive-table tbody tr:last-child td {
+    border-bottom: 0 none;
+}
+
+.guide-text {
+    display: flex;
+    gap: 0 4px;
+    align-items: center;
+    width: 100%;
+    margin-top: 4px;
+    color: var(--text-color-darkgray);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 150%;
 }
