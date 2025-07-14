@@ -2,36 +2,38 @@
 import Tag from "../../../common/component/tag/Tag";
 import styles from "./ResponseBox.module.css"
 
-const ResponseBox = ({ index, dataSet, alwaysVisible, isRejected }) => {
+const ResponseBox = ({ index, company, status, date }) => {
 
     const statusMap = {
-        requested: {
-            variant: 'red',
+        pending: {
+            variant: 'light-pink',
             text: '미제출'
         },
-        submitted: {
-            variant: 'yellow-txt-wh',
+        editing: {
+            variant: 'light-yellow',
             text: '작성중'
         },
-        rejected: {
+        complete: {
             variant: 'gray-txt-wh',
             text: '제출완료'
         },
     };
 
+     const currentStatus = statusMap[status] || statusMap.pending;
+
     return (
-        <div className={styles['response-list']}>
-            <div className="flex justify-between mb4">
-                <div className="flex gap-3">
-                    <p className={styles['count']}>{index}</p>
-                    <p className={styles['companyName']}>회사명</p>
+        <div className="response-item box line shadow">
+            <div className="flex flex-col">
+                <div className={styles.companyWrap}>
+                    <p className={styles.count}>{index}</p>
+                    <p className={styles.companyName}>{company}</p>
                 </div>
-                <div className="flex gap-2">
-                    <div className={styles['date-wrap']}>
+                <div className="flex justify-between">
+                    <div className={styles.dateWrap}>
                         <p>회신기한</p>
-                        <p className={styles['date']}>2025-07-01</p>
+                        <p className={styles.date}>{date}</p>
                     </div>
-                    <Tag variant={statusMap.variant} tagType="response" text={statusMap.text}/>
+                    <Tag variant={currentStatus.variant} tagType="approve" text={currentStatus.text} />
                 </div>
             </div>
         </div>

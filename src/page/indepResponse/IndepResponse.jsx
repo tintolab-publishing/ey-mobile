@@ -16,12 +16,21 @@ const IndepResponse = () => {
     const navigate = useNavigate();
 
     const filterOption = EasyList([
-        { value: '', text: '제출필요', },
-        { value: 'ALL', text: '전체', selected: true },
+        { value: '', text: '제출필요', selected: true },
+        { value: 'ALL', text: '전체',},
         { value: '', text: '미제출' },
         { value: '', text: '작성중', },
         { value: '', text: '제출완료', }
     ]);
+
+    const data = [
+        { index: 1, company: "메가스터디(주)", status: "pending", date:'2025-07-01', },
+        { index: 2, company: "메가스터디교육(주)", status: "pending", date:'2025-07-01' },
+        { index: 3, company: "메가커피", status: "editing", date:'2025-07-01' },
+        { index: 4, company: "블루웨이브테크", status: "editing", date:'2025-07-01', },
+        { index: 5, company: "(주)국산약품", status: "complete", date:'2025-07-01' },
+        { index: 6, company: "스카이브릿지커머스", status: "complete", date:'2025-07-01' },
+    ];
 
     return (
         <div className="page-wrap">
@@ -33,7 +42,23 @@ const IndepResponse = () => {
                         <Button className="h40 w60">조회</Button>
                     </div>
                 </div>
-                <ResponseBox />
+                <div className="contents-wrap">
+                    <div className="status-info-area">
+                        <div className="status-text">제출필요</div>
+                        <div className="count">12건</div>
+                    </div>
+                    <div className="response-list flex flex-col">
+                        {data.map((item) => (
+                            <ResponseBox
+                                key={item.index}
+                                index={item.index}
+                                company={item.company}
+                                status={item.status}
+                                date={item.date}
+                            />
+                        ))}
+                    </div>
+                </div>
             </div>
         </div>
     );

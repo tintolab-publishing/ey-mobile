@@ -2707,3 +2707,36 @@ select.w-small {
     font-weight: 700;
     font-family: 'Pretendard Bold';
 }
+
+.status-info-area {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 16px 8px;
+    font-size: 14px;
+}
+.status-info-area::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    z-index: -1;
+    width: calc(100% - 16px);
+    height: 1px;
+    background-color: var(--border-color);
+    transform: translateY(-50%);
+}
+.status-info-area .status-text {
+    padding-right: 4px;
+    background-color: #fff;
+    color: var(--text-color-darkgray);
+    font-weight: 400;
+    line-height: 150%;
+}
+.status-info-area .count {
+    padding-right: 10px;
+    background-color: #fff;
+    color: var(--text-color-bk);
+    font-weight: 700;
+}
