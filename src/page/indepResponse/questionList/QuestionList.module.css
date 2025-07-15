@@ -22,8 +22,9 @@
 .questionItem .questionContent {
     display: flex;
     align-items: center;
+    position: relative;
     gap: 0 6px;
-    padding-bottom: 10px;
+    margin-bottom: 10px;
 }
 .questionContent .question {
     padding-left: 8px;

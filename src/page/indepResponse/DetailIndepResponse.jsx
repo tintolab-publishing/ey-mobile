@@ -6,9 +6,9 @@ import Executive from './detailItem/Executive'
 import Checkbox from '../../common/component/checkbox/Checkbox'
 import Icon from '../../common/component/icon/Icon'
 import QuestionList from "./questionList/QuestionList";
+import IndepResSaveModal from "../../modal/indepResponse/IndepResSaveModal";
 
 const DetailIndepResponse = () => {
-
     const companyList = [
         { ko: '리뉴에너지경기(주)', en: 'renewenergy Gyeonggi Co.,Ltd.' },
         { ko: '일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십', en: 'abcdefghijklmnopqrstuvwxyz' },
@@ -102,6 +102,7 @@ const DetailIndepResponse = () => {
             <Button className="floating-btn white">임시저장</Button>
             <Button className="floating-btn primary">제출</Button>
         </div>
+        <IndepResSaveModal isOpen={true} />
         </>
     )
 }

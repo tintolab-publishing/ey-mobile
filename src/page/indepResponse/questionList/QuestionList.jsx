@@ -16,11 +16,13 @@ const QuestionList = () => {
         items: [
         {
             text: '1. 독립성 준수대상 회사의 지분증권 또는 채무증권 보유',
-            tooltip: '예: 상장회사 주식 보유, 회사채 보유 등',
+            tooltip: '[예시]\n· 본인, 배우자 또는 직계가족이 독립성 준수대상 회사의 지분증권 또는 채무증권 보유\n· EY한영 임직원의 측근가족(형제/자매 등) 본인의 순자산 5% 이상에 해당하는 독립성 준수대상 회사의 주식을 보유',
+            placeholder: '지분증권권/재무증권 보유자(본인, 배우자 등)와 지분증권/채무증권 발행 회사명을 기재',
         },
         {
             text: '2. 독립성 준수대상 회사와의 채권/채무 관계 형성',
-            tooltip: '예: 돈을 빌리거나 빌려준 관계',
+            tooltip: '[예시]\n· 본인, 배우자 또는 직계가족이 독립성 준수대상 회사의 지분증권 또는 채무증권 보유\n· EY한영 임직원의 측근가족(형제/자매 등) 본인의 순자산 5% 이상에 해당하는 독립성 준수대상 회사의 주식을 보유',
+            placeholder: '채권/채무 보유자(본인, 배우자 등)와 채권/채무 관계 형성 회사명을 기재',
         },
         ],
     },
@@ -29,7 +31,27 @@ const QuestionList = () => {
         items: [
         {
             text: '3. 독립성 준수대상 회사와의 고용관계 형성',
-            tooltip: '예: 해당 회사의 정규직, 계약직 등으로 재직 중인 경우',
+            tooltip: '[예시]\n· 본인, 배우자 또는 직계가족이 독립성 준수대상 회사의 지분증권 또는 채무증권 보유\n· EY한영 임직원의 측근가족(형제/자매 등) 본인의 순자산 5% 이상에 해당하는 독립성 준수대상 회사의 주식을 보유',
+            placeholder: '고용관계가 있는 회사명/소속 부서/직급을 기재',
+        },
+        ],
+    },
+    {
+        title: '[사업관계]',
+        items: [
+        {
+            text: '4. 독립성 준수대상 회사와의 사업관계 형성',
+            tooltip: '[예시]\n· 본인, 배우자 또는 직계가족이 독립성 준수대상 회사의 지분증권 또는 채무증권 보유\n· EY한영 임직원의 측근가족(형제/자매 등) 본인의 순자산 5% 이상에 해당하는 독립성 준수대상 회사의 주식을 보유',
+            placeholder: '해당 회사명과 사업관계를 기재',
+        },
+        ],
+    },
+    {
+        title: '[기타]',
+        items: [
+        {
+            text: '5. 상기 이외의 이해상종이나 독립성 훼손위험이 존재하는 경우',
+            placeholder: '상세 내용을 기재',
         },
         ],
     },
@@ -64,17 +86,17 @@ const QuestionList = () => {
                             </div>
                             <div className={styles.answerOptions}>
                                 <div className="radio-btn-wrap">
-                                    <label class="radio-btn">
-                                        <input type="radio" name="answer" value="yes" />
+                                    <label className="radio-btn">
+                                        <input type="radio" name={`answer-${questionIdx}-${itemIdx}`} value="yes" />
                                         <span>예</span>
                                     </label>
-                                    <label class="radio-btn">
-                                        <input type="radio" name="answer" value="no" />
+                                    <label className="radio-btn">
+                                        <input type="radio" name={`answer-${questionIdx}-${itemIdx}`} value="no" />
                                         <span>아니오</span>
                                     </label>
                                 </div>
                                 {/* [예] checked 된 경우 노출 */}
-                                <Textarea className="h87" placeholder="지분증권권/재무증권 보유자(본인, 배우자 등)와 지분증권/채무증권 발행 회사명을 기재" style={{ whiteSpace: 'pre-wrap' }}/>
+                                <Textarea className="h87" placeholder={item.placeholder} style={{ whiteSpace: 'pre-wrap' }}/>
                             </div>
                         </div>
                     )

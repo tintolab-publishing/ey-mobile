@@ -2007,7 +2007,7 @@ select.w-small {
 }
 
 .popup-wrap.confirm-popup .popup-title-wrap {
-    padding: 32px 0 20px;
+    padding: 32px 0 40px;
 }
 
 .popup-wrap.confirm-popup::before {
@@ -2079,7 +2079,7 @@ select.w-small {
 .popup-title-wrap .sub-text {
     padding-top: 10px;
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 150%;
     color: var(--text-color-darkgray);
 }
@@ -2320,13 +2320,14 @@ select.w-small {
     background-color: var(--text-color-darkgray);
     transform: translateY(-50%);
 }
-
 .tooltip-area .tooltip-text {
     display: none;
     position: absolute;
     top: calc(100% + 9px);
-    right: -2px;
-    width: 100%;
+    right: 0;
+    z-index: 10;
+    width: max-content;
+    max-width: 88.8vw;
     padding: 8px 12px;
     border-radius: 8px;
     background-color: var(--bg-bk);
@@ -2334,26 +2335,41 @@ select.w-small {
     font-size: 14px;
     font-weight: 400;
     line-height: 150%;
+    white-space: pre-line;
+    word-break: keep-all;
 }
-
-.tooltip-area .tooltip-text::before {
+[class*="questionContent"] .tooltip-area .tooltip-text {
+    max-width: 84vw;
+    font-size: 12px;
+}
+.tooltip-area [class*="icon"] {
+    position: relative;
+}
+.tooltip-area [class*="icon"]::after {
     content: '';
+    display: none;
     position: absolute;
-    top: -8px;
-    right: 4px;
+    bottom: -100%;
+    right: 1px;
     width: 0;
     height: 0;
     border-left: 8px solid transparent;
     border-right: 8px solid transparent;
     border-bottom: 14px solid var(--bg-bk);
 }
-
+[class*="questionContent"] .tooltip-area [class*="icon"]::after {
+    bottom: calc(-100% - 3px);
+    right: -1px;
+}
 .tooltip-area.on .tooltip-text {
     display: block;
 }
 
 .tooltip-area.on [class*="icon"] {
     background-image: url('../../assets/images/common/icon/icon_tooltip_bk.svg');
+}
+.tooltip-area.on [class*="icon"]::after {
+    display: block;
 }
 .tooltip-area.on [class*="tooltip-small"] {
     background-image: url('../../assets/images/common/icon/icon_tooltip_bk_small.svg');
