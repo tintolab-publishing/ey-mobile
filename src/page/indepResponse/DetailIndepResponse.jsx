@@ -37,6 +37,9 @@ const DetailIndepResponse = () => {
         { name: '박정호', ownershipType: '', position: '부회장' },
     ]
 
+    // 화면 확인위한 임시 onClose
+    const [isOpen, setIsOpen] = useState(true);
+
     return (
         <>
         <div className="contents-wrap">
@@ -102,7 +105,7 @@ const DetailIndepResponse = () => {
             <Button className="floating-btn white">임시저장</Button>
             <Button className="floating-btn primary">제출</Button>
         </div>
-        <IndepResSaveModal isOpen={true} />
+        <IndepResSaveModal isOpen={isOpen} onClose={() => setIsOpen(false)} />
         </>
     )
 }
