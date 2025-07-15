@@ -2082,6 +2082,7 @@ select.w-small {
     font-weight: 400;
     line-height: 150%;
     color: var(--text-color-darkgray);
+    word-break: keep-all;
 }
 
 .popup-header .guide-text-wrap {
@@ -2855,10 +2856,13 @@ select.w-small {
 .executive-table {
     width: 100%;
     text-align: center;
+    border-collapse: separate;
+    border-spacing: 0;
 }
 .executive-table thead tr th,
 .executive-table tbody tr td {
-    height: 30px;
+    min-height: 30px;
+    padding: 7px 10px;
     border-bottom: 1px solid var(--border-color);
     color: var(--text-color-bk);
     font-size: 10px;

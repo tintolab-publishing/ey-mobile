@@ -1,14 +1,33 @@
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import Icon from '../../../common/component/icon/Icon';
 import styles from "./QuestionList.module.css";
 import Textarea from '../../../common/component/textarea/Textarea';
 
 const QuestionList = () => {
   const [activeIndex, setActiveIndex] = useState(null);
+  const tooltipRefs = useRef([]);
 
   const handleTooltipClick = (index) => {
-    setActiveIndex(index === activeIndex ? null : index);
+    setActiveIndex(prev => (prev === index ? null : index));
   };
+
+  // 외부 클릭 감지
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (
+        tooltipRefs.current.every(
+          (ref) => ref && !ref.contains(event.target)
+        )
+      ) {
+        setActiveIndex(null);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
 
   const questionData = [
     {
@@ -76,6 +95,7 @@ const QuestionList = () => {
                                     <div
                                         className={`tooltip-area ${activeIndex === currentIndex ? 'on' : ''}`}
                                         onClick={() => handleTooltipClick(currentIndex)}
+                                        ref={(el) => (tooltipRefs.current[currentIndex] = el)}
                                     >
                                         <Icon icon="tooltip-small" />
                                         {activeIndex === currentIndex && (

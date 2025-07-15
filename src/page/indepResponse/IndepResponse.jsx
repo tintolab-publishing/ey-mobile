@@ -30,6 +30,7 @@ const IndepResponse = () => {
         { index: 4, company: "블루웨이브테크", status: "editing", date:'2025-07-01', },
         { index: 5, company: "(주)국산약품", status: "complete", date:'2025-07-01' },
         { index: 6, company: "스카이브릿지커머스", status: "complete", date:'2025-07-01' },
+        { index: 7, company: "넥스트비전랩", status: "complete", date:'2025-07-01' },
     ];
 
     return (

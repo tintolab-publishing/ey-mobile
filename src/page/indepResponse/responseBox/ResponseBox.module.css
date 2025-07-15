@@ -15,6 +15,12 @@
 .dateWrap {
     display: flex;
     align-items: center;
+    gap: 0 8px;
     padding-left: 8px;
     font-size: 12px;
+    color: var(--text-color-darkgray);
+}
+.dateWrap .date {
+    font-weight: 700;
+    color: var(--text-color-bk);
 }

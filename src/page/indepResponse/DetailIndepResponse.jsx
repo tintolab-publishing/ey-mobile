@@ -66,6 +66,11 @@ const DetailIndepResponse = () => {
                     {executiveList && (
                         <div className="executive-table-wrap">
                             <table className="executive-table">
+                                <colgroup>
+                                    <col width="33.333%"/>
+                                    <col width="33.333%"/>
+                                    <col width="33.333%"/>
+                                </colgroup>
                                 <thead>
                                     <tr>
                                         <th>성명</th>
@@ -94,7 +99,7 @@ const DetailIndepResponse = () => {
                     <div className="caution-message-box">
                         <div className="box-title">주의</div>
                         <div className="text-area">
-                            <div className="text">신규 감사고객의 경유 독립성 준수 대상 기간은 감사계약 체결일부터 해당됨에 따라 특이사하잉 있는 경우 감사계약 체결일 이전에 모두 해소하여야 합니다.</div>
+                            <div className="text">신규 감사고객의 경우 독립성 준수 대상 기간은 감사계약 체결일부터 해당됨에 따라 특이사항 있는 경우 감사계약 체결일 이전에 모두 해소하여야 합니다.</div>
                         </div>
                     </div>
                     <QuestionList />
