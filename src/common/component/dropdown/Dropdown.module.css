@@ -23,6 +23,18 @@
     line-height: 160%;
     color: var(--text-color-darkgray);
 }
+.box-title-wrap .box-title .tag {
+    display: inline-flex;
+    padding: 4px 8px;
+    background: var(--bg-lightgray);
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 100%;
+}
+.box-title-wrap .box-title .tag.open {
+    background: var(--primary-color);
+}
 .content-area [class*="tag"] {
     margin-right: -2px;
 }

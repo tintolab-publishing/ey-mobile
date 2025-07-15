@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Icon from '../icon/Icon';
 import styles from './Dropdown.module.css'
 
-const Dropdown = ({ title, desc, className, children }) => {
+const Dropdown = ({ title, desc, className, children, count }) => {
     const [isOpen, setIsOpen] = useState(false);
 
     // 드롭다운 토글 함수
@@ -24,8 +24,11 @@ const Dropdown = ({ title, desc, className, children }) => {
             <div className={`${styles['box-title-wrap']} cursor-pointer`} onClick={toggleDropdown} >
                 <span className={`${styles['box-title']}`}>
                     <span className="title">{title}</span>
-                    {!className && (
+                    {desc && (
                         <span className={`${styles['text']}`}>{desc}</span>
+                    )}
+                    {count && (
+                        <span className={`${styles['tag']} ${isOpen ? styles['open'] : ''}`}>{count}건</span>
                     )}
                 </span>
                 <Icon icon="dropdown" className={`${isOpen ? 'rotate-180' : 'rotate-0'}`} />

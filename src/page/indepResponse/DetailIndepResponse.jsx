@@ -50,7 +50,7 @@ const DetailIndepResponse = () => {
                 </p>
             </div>
             <div className="list-wrap flex flex-col gap16">
-                <Dropdown className="box line shadow" title="독립성 준수대상 회사 목록">
+                <Dropdown className="box line shadow" title="독립성 준수대상 회사 목록" count={120}>
                     {companyList && (
                         <div className="company-list">
                             {companyList.map((company, index) => (
