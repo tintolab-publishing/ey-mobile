@@ -11,7 +11,7 @@ import IndepResSaveModal from "../../modal/indepResponse/IndepResSaveModal";
 const DetailIndepResponse = () => {
     const companyList = [
         { ko: '리뉴에너지경기(주)', en: 'renewenergy Gyeonggi Co.,Ltd.' },
-        { ko: '일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십', en: 'abcdefghijklmnopqrstuvwxyz' },
+        { ko: '일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십', en: 'abcdefghijklmnopqrstuvwxyz' },
         { ko: '리뉴원(주)', en: 'Renewone Co.,Ltd.' },
         { ko: '리뉴에너지경기(주)', en: 'renewenergy Gyeonggi Co.,Ltd.' },
         { ko: '리뉴에너지경인(주)', en: 'renewenergy Gyeonin Co.,Ltd.' },

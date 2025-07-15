@@ -8,9 +8,12 @@
 }
 .companyItem em {
   flex-shrink: 0;
+  overflow: hidden;
+  max-width: calc(100% - 42px);
   font-size: 10px;
   font-weight: 700;
-  line-height: 150%;
+  line-height: 15px;
+  white-space: normal;
 }
 .companyItem span {
   display: inline-flex;
@@ -18,7 +21,7 @@
   color: var(--text-color-darkgray);
   font-size: 10px;
   font-weight: 400;
-  line-height: 150%;
+  line-height: 15px;
 }
 .companyItem span span {
   display: inline;
@@ -27,4 +30,11 @@
   max-width: 100%;
   white-space: nowrap;
   text-overflow: ellipsis;
+}
+.companyItem.small em,
+.companyItem.small span {
+  font-size: 8px;
+}
+.companyItem.small .num {
+  font-size: 10px;
 }
