@@ -14,6 +14,7 @@ import RoundRobin from './roundRobin/RoundRobin';
 import DetailRoundRobin from './roundRobin/DetailRoundRobin';
 import IndepResponse from './indepResponse/IndepResponse';
 import DetailIndepResponse from './indepResponse/DetailIndepResponse';
+import PayCheck from './payCheck/PayCheck';
 
 const RouteIndex = {
     /* /list */
@@ -109,6 +110,13 @@ const RouteIndex = {
             component: DetailIndepResponse,
             layout: DetailLayout
         }
+    },
+
+    /* /payCheck */
+    payCheck: {
+        name: "급여조회",
+        component: PayCheck,
+        layout: MainLayout,
     },
 };
 

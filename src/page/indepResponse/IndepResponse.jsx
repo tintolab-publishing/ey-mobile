@@ -1,14 +1,11 @@
 import { useEffect, useState, useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
-import Dropdown from '../../common/component/dropdown/Dropdown';
 import EasyObj from '../../common/dataset/EasyObj';
 import EasyList from '../../common/dataset/EasyList';
 import Input from '../../common/component/input/Input';
-import { format, startOfWeek, endOfWeek, subWeeks, subDays } from 'date-fns';
 import Select from '../../common/component/select/Select';
 import Button from '../../common/component/button/Button';
 import { AppContext } from '../../common/share/AppContext';
-import Icon from '../../common/component/icon/Icon';
 import ResponseBox from './responseBox/ResponseBox';
 
 const IndepResponse = () => {
