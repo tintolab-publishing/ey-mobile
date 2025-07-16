@@ -49,7 +49,7 @@ const DetailIndepResponse = () => {
                     감사 수입을 위한 독립성 확인 절차
                 </div>
                 <p className="text">
-                    EY한영은 [회사명]에 대한 2024~2025년도 감사 수임을 추진하고 있어 아래 내용에 따라 7월 9일(수요일)까지 답변을 제출하여 주시기 바랍니다.
+                    EY한영은 <span className="bold">[회사명]</span>에 대한 <span className="bold">2024~2025년도</span> 감사 수임을 추진하고 있어 아래 내용에 따라 <span className="bold">7월 9일(수요일)</span>까지 답변을 제출하여 주시기 바랍니다.
                 </p>
             </div>
             <div className="list-wrap flex flex-col gap16">
@@ -99,7 +99,7 @@ const DetailIndepResponse = () => {
                     <div className="caution-message-box">
                         <div className="box-title">주의</div>
                         <div className="text-area">
-                            <div className="text">신규 감사고객의 경우 독립성 준수 대상 기간은 감사계약 체결일부터 해당됨에 따라 특이사항 있는 경우 감사계약 체결일 이전에 모두 해소하여야 합니다.</div>
+                            <div className="text">신규 감사고객의 경우 독립성 준수 대상 기간은 감사계약 체결일부터 해당됨에 따라 특이사항이 있는 경우 감사계약 체결일 이전에 모두 해소하여야 합니다.</div>
                         </div>
                     </div>
                     <QuestionList />
