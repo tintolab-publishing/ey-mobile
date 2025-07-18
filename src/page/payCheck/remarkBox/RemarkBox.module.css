@@ -1,0 +1,67 @@
+.remarkBox {
+    padding: 12px;
+}
+.remarkBox [class*="box-title-wrap"] {
+    padding: 0 0 4px 8px;
+}
+.infoTextList {
+    padding: 0 8px 12px;
+    margin-bottom: 16px;
+    border-bottom: 1px solid var(--border-color);
+}
+.infoTextList .infoText {
+    position: relative;
+    padding-left: 17px;
+    padding-bottom: 10px;
+    color: var(--text-color-darkgray);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 150%;
+    word-break: keep-all;
+}
+.infoTextList .infoText:last-child {
+    padding-bottom: 0;
+}
+.infoTextList .infoText::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background-color: var(--text-color-darkgray);
+}
+
+.overtimeGuide .overtimeTitle {
+    padding: 0 0 12px 8px;
+    color: var(--text-color-bk);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 150%;
+}
+ul.overtimeList {
+    list-style: none;
+}
+.overtimeItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 12px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    background-color: #fff;
+    font-size: 12px;
+    font-weight: 400;
+}
+.overtimeItem:last-child {
+    margin-bottom: 0;
+}
+.overtimeItem .label {
+    color: var(--text-color-darkgray);
+}
+.overtimeItem .value {
+    color: var(--text-color-bk);
+    font-weight: 700;
+}

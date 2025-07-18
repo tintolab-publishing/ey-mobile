@@ -1,0 +1,53 @@
+.titleWrap{
+    padding: 0 0 8px 8px;
+}
+.titleWrap .title {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 150%;
+}
+
+.infoWrap .infoArea {
+    padding: 12px 8px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.20);
+    font-size: 12px;
+    line-height: 150%;
+}
+.infoWrap .infoArea:first-child {
+    padding-top: 0;
+}
+.infoWrap .infoArea .infoItem {
+    display: flex;
+    padding-bottom: 2px;
+}
+.infoWrap .infoArea.paymentInfo .infoItem {
+    padding-bottom: 4px;
+}
+.infoWrap .infoArea .infoItem:last-child {
+    padding-bottom: 0;
+}
+.infoWrap .infoArea .label {
+    padding-right: 8px;
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 400;
+}
+.infoWrap .infoArea .value {
+    color: rgba(255, 255, 255, 1);
+    font-weight: 700;
+    white-space: nowrap;
+}
+.infoWrap .infoArea .value.right {
+    flex: 1;
+    text-align: right;
+}
+.netAmount {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 8px 4px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 150%;
+}
